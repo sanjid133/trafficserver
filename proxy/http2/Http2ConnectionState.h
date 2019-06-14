@@ -86,6 +86,7 @@ public:
       return this->settings[indexof(id)] = value;
     } else {
       ink_assert(!"Bad Settings Identifier");
+      // Do nothing - 6.5.2 Unsupported parameters MUST be ignored
     }
 
     return 0;
